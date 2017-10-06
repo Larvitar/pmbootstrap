@@ -50,6 +50,3 @@ done
 # Create weston-launch group and add user to it
 [ $(getent group weston-launch) ] || groupadd weston-launch
 usermod -a -G weston-launch user
-
-# Set SUID bit to run it with proper credentials
-chmod +s /usr/bin/weston-launch
