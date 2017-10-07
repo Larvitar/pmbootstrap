@@ -22,7 +22,7 @@ package() {
 	install -D -m644 "$srcdir"/initfs-hook.sh \
 		"$pkgdir"/etc/postmarketos-mkinitfs/hooks/00-${pkgname}.sh
 	install -D -m644 "$srcdir"/90-android-touch-dev.rules \
-		"$pkgdir"/etc/udev/rules.d/90-android-touch-dev.rule
+		"$pkgdir"/etc/udev/rules.d/90-android-touch-dev.rules
 }
 
 sha512sums="bd62f41697fa755c6f0bedb56abb80afb4c955d58e64763102dc3853626b9d78a753f2f6aaa0e09313785bdce83f21d5fcba112a947aceee14c28647adfcfb0c  deviceinfo
